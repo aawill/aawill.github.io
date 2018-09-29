@@ -17,12 +17,15 @@ footer {
 }
 
 #imgContainer {
+  display: inline-block;
   position: absolute;
   height: 100%;
   width: 100%; 
+  min-width: 150vh;
 }
 
 .background {
+  display: inline-block;
   /*background-image: url(assets/colorado.JPG);
   background-size: 50%;
   background-position: right;*/
