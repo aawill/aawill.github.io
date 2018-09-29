@@ -15,25 +15,56 @@
     <script id="result-template" type="text/x-handlebars-template"></script>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Aaron Willette</a>
       <button class="btn btn-dark">Home</button>
-      <button class="btn btn-dark">Resume</button>
+      <button class="btn btn-dark">
+        Resume
+        <a href="assets/colorado.JPG"></a>
+      </button>
       <button class="btn btn-dark">Projects</button>
     </nav>
-    <!--<div class="background"></div>-->
+    <div id="bodyWrapper">
+      <div id="mainCardsRow" class="row justify-content-center">
+        <div class="card-columns">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Coursework</h5>
+              <h6 class="card-subtitle mb-2 text-muted">University of Michigan</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Projects</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Music</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="imgContainer">
       <img src="assets/colorado.JPG" class="background">
     </div>
-    <div class="row foot bg-dark">
-      <div class="col-1">
-        <i class="fab fa-linkedin fa-2x"></i>
-        <i class="fab fa-github fa-2x"></i>
-      </div>
-    </div>
-    <!--<footer class="bg-dark">
-      <i class="fab fa-linkedin fa-2x"></i>
-      <i class="fab fa-github fa-2x"></i>
-    </footer>-->
+    <footer class="bg-dark">
+      <h4 class="footerText">Social: </h4>
+      &emsp;
+      <i class="fab fa-linkedin fa-2x footerIcon"></i>
+      <i class="fab fa-github fa-2x footerIcon"></i>
+    </footer>
   </body>
 </html>
