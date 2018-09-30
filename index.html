@@ -5,6 +5,7 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -17,36 +18,96 @@
             crossorigin="anonymous"></script>
     <script src="handlebars-v4.0.11.js"></script>
     <script id="result-template" type="text/x-handlebars-template"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Aaron Willette</a>
+      <!--<a class="navbar-brand" href="#">Aaron Willette</a>-->
       <button class="btn btn-dark">Home</button>
-      <!--<button href="assets/colorado.JPG" class="btn btn-dark">
-        <a href="assets/colorado.JPG" download="le_resume;)">Resume</a>
-      </button>-->
-      <a href="assets/resume.JPG" download="aaron willette resume">
+      <a href="assets/resume.pdf" download="aaron willette resume">
         <button class="btn btn-dark">Resume</button>
       </a>
-      <button class="btn btn-dark">Projects</button>
+      <button class="btn btn-dark">About</button>
     </nav>
     <div id="bodyWrapper">
+      <div class="row justify-content-center">
+        <!--<div class="card headerCard">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>-->
+        <div class="customHeader">
+          <h1>Aaron Willette</h1>
+          <p>Sound Engineering student at University of Michigan</p>
+        </div>
+      </div>
       <div id="mainCardsRow" class="row justify-content-center">
-        <div class="card-columns">
-          <div class="card">
+        <div class="col-3 cardCol">
+          <div class="card border-dark homeCard">
+            <img class="card-img-top" src="assets/dotsynth.PNG">
+            <div class="card-body">
+              <h5 class="card-title">dotSynth</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Collaborative visual synthesis interface
+              </h6>
+              <p class="card-text">Utilizes WebAudio and PubNub to allow real-time, 
+                bidirectional communication with sound dots</p>
+              <a href="https://github.com/aawill/dotSynth" 
+                 target="_blank" class="card-link">Github link</a>
+              <a href="https://aawill.github.io/dotSynth/" target="_blank" 
+                 class="card-link">Try it out</a>
+            </div>
+          </div>
+          <div class="card border-dark homeCard">
+            <img class="card-img-top" src="assets/dotsynth.PNG">
+            <div class="card-body">
+              <h5 class="card-title">Creative AI Music Generator</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Trained models to create melodies
+              </h6>
+              <p class="card-text">Python program learns from provided music files - 
+                Custom Max/MSP synths perform melody, bassline, and chords. 
+                Made with teammates Jessica Glynn, Brad Gurwin, and Kayla Wiggins</p>
+              <a href="https://github.com/aawill/Machine-Learning-Music-Generator" 
+                 target="_blank" class="card-link">Github link</a>
+              <a href="https://drive.google.com/drive/folders/1rpH4vR9TVDAzR0wMw5EyRNhsoKoY6vBv" 
+                 target="_blank" class="card-link">Hear it in action</a>
+            </div>
+          </div>
+          <div class="card border-dark homeCard">
+            <img class="card-img-top" src="assets/dotsynth.PNG">
+            <div class="card-body">
+              <h5 class="card-title">dotSynth</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Collaborative visual synthesis interface
+              </h6>
+              <p class="card-text">Utilizes WebAudio and PubNub to allow real-time, 
+                bidirectional communication with sound dots</p>
+              <a href="https://aawill.github.io/dotSynth/" class="card-link">Try it out</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card border-dark">
             <div class="card-body">
               <h5 class="card-title">Coursework</h5>
-              <h6 class="card-subtitle mb-2 text-muted">University of Michigan</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Most recent first</h6>
               <p class="card-text">Some quick example text to build on the card 
                 title and make up the bulk of the card's content.</p>
               <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>
             </div>
           </div>
+        </div>
+        <!--<div class="card-columns">
+          
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Projects</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <h6 class="card-subtitle mb- text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card 
                 title and make up the bulk of the card's content.</p>
               <a href="#" class="card-link">Card link</a>
@@ -59,16 +120,16 @@
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card 
                 title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <a href="#" class="card-link">Bandcamp</a>
+              <a href="#" class="card-link">Soundcloud</a>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
-    <div id="imgContainer">
+    <!--<div id="imgContainer">
       <img src="assets/colorado.JPG" class="background">
-    </div>
+    </div>-->
     <footer class="bg-dark">
       <h4 class="footerText">Social: </h4>
       &emsp;
