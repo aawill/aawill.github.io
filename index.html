@@ -16,15 +16,15 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" 
             integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" 
             crossorigin="anonymous"></script>
-    <script src="handlebars-v4.0.11.js"></script>
-    <script id="result-template" type="text/x-handlebars-template"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <!--<a class="navbar-brand" href="#">Aaron Willette</a>-->
-      <button class="btn btn-dark">Home</button>
-      <a href="assets/resume.pdf" download="aaron willette resume">
+      <a href="index.html">
+        <button class="btn btn-dark">Home</button>
+      </a>
+      <a href="resume.html">
         <button class="btn btn-dark">Resume</button>
       </a>
       <button class="btn btn-dark">About</button>
@@ -45,6 +45,9 @@
       </div>
       <div id="mainCardsRow" class="row justify-content-center">
         <div class="col-6 col-xl-3 col-lg-4 col-sm-5 cardCol">
+          <div class="colHeader">
+            <h3>Projects <i class="fa fa-angle-down"></i></h3>
+          </div>
           <div class="card border-dark homeCard">
             <img class="card-img-top" src="assets/crowdinc.jpg">
             <div class="card-body">
@@ -107,18 +110,13 @@
           </div>
         </div>
         <div class="col-6 col-xl-3 col-lg-4 col-sm-5 cardCol">
-          <div class="card border-dark homeCard">
-            <iframe style="border: 0; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/track=2177933311/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://shmongo.bandcamp.com/track/lets-melt">Let&#39;s Melt by Shmongo</a></iframe>
-            <div class="card-body">
-              <h5 class="card-title">Electronic composition #1</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Composed + produced in Ableton</h6>
-              <p class="card-text">Created for PAT 202 class assignment - early techno + outrun influence. Big synths and 808s</p>
-            </div>
+          <div class="colHeader">
+            <h3>Music <i class="fa fa-angle-down"></i></h3>
           </div>
           <div class="card border-dark homeCard">
             <iframe width="100%" height="170" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319140061&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
             <div class="card-body">
-              <h5 class="card-title">Electronic composition #1</h5>
+              <h5 class="card-title">Electronic Composition #1</h5>
               <h6 class="card-subtitle mb-2 text-muted">Composed + produced in Ableton</h6>
               <p class="card-text">Created for PAT 202 class assignment - early techno + outrun influence. Big synths and 808s</p>
             </div>
@@ -126,9 +124,17 @@
           <div class="card border-dark homeCard">
             <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319140063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
             <div class="card-body">
-              <h5 class="card-title">Take a joke</h5>
+              <h5 class="card-title">Take a Joke</h5>
               <h6 class="card-subtitle mb-2 text-muted">Recorded + mixed in Reaper</h6>
               <p class="card-text">feat. Jacob Sugarman. Sounds of dry indie electronica</p>
+            </div>
+          </div>
+          <div class="card border-dark homeCard">
+            <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/330418416&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Let's Melt by Shmongo</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Written by Jacob Sugarman and Geoff Brown</h6>
+              <p class="card-text">Played bass and assisted with engineering. Full album release coming soon</p>
             </div>
           </div>
         </div>
