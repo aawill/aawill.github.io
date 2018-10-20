@@ -18,7 +18,7 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
-  <body class="aboutBody">
+  <!--<body class="aboutBody">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <a href="index.html">
         <button class="btn btn-dark">Home</button>
@@ -45,7 +45,6 @@
             I'm currently working as an engineering team lead at the University of Michigan Crowds + Machines Lab. My team is responsible for bringing the <a href="http://croma.eecs.umich.edu/projects-proto.html">Apparition rapid UI prototyping platform</a> to release quality. <br/>
             My duties include finding and fixing bugs in the existing platform, adding features, documenting the code, and enforcing Github best practices.
           </p>
-          
         </div>
       </div>
       <div class="row">
@@ -75,11 +74,8 @@
                 <li class="list-group-item">Signals and Systems</li>
                 <li class="list-group-item">Data Structures and Algorithms</li>
               </ul>
-
             </div>
           </div>
-          
-          
         </div>
       </div>
     </div>
@@ -89,5 +85,83 @@
       <i class="fab fa-linkedin fa-2x footerIcon"></i>
       <i class="fab fa-github fa-2x footerIcon"></i>
     </footer>
+  </body>-->
+  <body class="aboutBody">
+    <nav id="mainNav" class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="index.html">
+        <button class="btn btn-dark">Home</button>
+      </a>
+      <a href="resume.html">
+        <button class="btn btn-dark">Resume</button>
+      </a>
+      <a href="about.html">
+        <button class="btn btn-dark">About</button>
+      </a>
+    </nav>
+    <div id="bodyWrapper" class="container-fluid">
+      <div class="row" id="topRow">
+        <div class="customHeader">
+          <h1>About</h1>
+        </div>
+      </div>
+      <div id="mainContent">
+        <div class="row">
+          <div class="col-6 text-right imgCol">
+            <img src="assets/croma.png" class="img-fluid aboutLogo">
+          </div>
+          <div class="col-4 text-left">
+            <p class="aboutContent">
+              I'm currently working as an engineering team lead at the University of Michigan Crowds + Machines Lab. My team is responsible for bringing the <a href="http://croma.eecs.umich.edu/projects-proto.html">Apparition rapid UI prototyping platform</a> to release quality. <br/>
+              My duties include finding and fixing bugs in the existing platform, adding features, documenting the code, and enforcing Github best practices.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 text-right imgCol">
+            <img src="assets/smtd.png" id="smtdLogo" class="img-fluid">
+            <img src="assets/eecs.png" id="eecsLogo" class="img-fluid">
+          </div>
+          <div class="col-4 text-left">
+            <p class="aboutContent">
+              I'm also in my third year as a Sound Engineering student at Michigan, with minors in Computer Science and Electrical Engineering. This year, I'm taking:
+            </p>
+            <div class="row classes">
+              <div class="col-6">
+                <h6>Fall 2018</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">General Physics I</li>
+                  <li class="list-group-item">Introduction to Electronic Circuits</li>
+                  <li class="list-group-item">OOP in Java</li>
+                  <li class="list-group-item">Immersive Media Design</li>
+                  <li class="list-group-item">Live Sound Reinforcement</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h6>Winter 2019</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">General Physics II</li>
+                  <li class="list-group-item">Signals and Systems</li>
+                  <li class="list-group-item">Data Structures and Algorithms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row bg-dark text-white" id="footRow">
+        <h4 class="footerText my-auto">Social: </h4>
+        &emsp;
+        <a href="https://www.linkedin.com/in/aaron-willette-748906137/" 
+           class="my-auto footerIcon">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/aawill" class="my-auto footerIcon">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://soundcloud.com/aaron-willette" class="my-auto footerIcon">
+          <i class="fab fa-soundcloud fa-2x"></i>
+        </a>
+      </div>
+    </div>
   </body>
 </html>

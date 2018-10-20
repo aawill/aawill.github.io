@@ -4,7 +4,7 @@ $(document).ready(function() {
   let topHeight = $('#topRow').outerHeight(true);
   let bottomHeight = $('#footRow').outerHeight(true);
   
-  $('#mainCardsRow').outerHeight(windowHeight - navHeight - 
+  $('#mainContent').outerHeight(windowHeight - navHeight - 
                                       topHeight - bottomHeight);
   
   $(window).resize(function() {
@@ -13,7 +13,7 @@ $(document).ready(function() {
     topHeight = $('#topRow').outerHeight(true);
     bottomHeight = $('#footRow').outerHeight(true);
 
-    $('#mainCardsRow').outerHeight(windowHeight - navHeight - topHeight - bottomHeight);
+    $('#mainContent').outerHeight(windowHeight - navHeight - topHeight - bottomHeight);
   });
 });
 
