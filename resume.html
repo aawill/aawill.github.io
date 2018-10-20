@@ -18,7 +18,7 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
-  <body class="homeBody">
+  <!--<body class="homeBody">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <a href="index.html">
         <button class="btn btn-dark">Home</button>
@@ -55,5 +55,40 @@
       <i class="fab fa-linkedin fa-2x footerIcon"></i>
       <i class="fab fa-github fa-2x footerIcon"></i>
     </footer>
+  </body>-->
+  <body class="homeBody">
+    <nav id="mainNav" class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="index.html">
+        <button class="btn btn-dark">Home</button>
+      </a>
+      <a href="resume.html">
+        <button class="btn btn-dark">Resume</button>
+      </a>
+      <a href="about.html">
+        <button class="btn btn-dark">About</button>
+      </a>
+    </nav>
+    <div id="bodyWrapper" class="container-fluid">
+      <div class="row" id="topRow">
+        <div class="customHeader">
+          <h1>Aaron Willette</h1>
+          <p>Sound Engineering student at University of Michigan</p>
+        </div>
+      </div>
+      <div class="row" id="mainCardsRow">
+        <div class="col-6 cardCol">
+          <div class="card border-dark homeCard">
+            <img class="card-img-top" src="assets/resume-1.png">
+            <img class="card-img-top" src="assets/resume-2.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="row bg-dark text-white" id="footRow">
+        <h4 class="footerText my-auto">Social: </h4>
+        &emsp;
+        <i class="fab fa-linkedin fa-2x footerIcon my-auto"></i>
+        <i class="fab fa-github fa-2x footerIcon my-auto"></i>
+      </div>
+    </div>
   </body>
 </html>
