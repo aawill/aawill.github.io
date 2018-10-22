@@ -81,6 +81,21 @@ nav {
   height: 100%;
 }
 
+/* responsiveness for small screens */
+@media (max-width: 576px) {
+  .imgCol {
+    border-right: 0px !important;
+    border-top: 1px solid;
+    text-align: left !important;
+  }
+  .aboutLogo {
+    margin-bottom: 0 !important;
+  }
+  .courseCol {
+    margin-bottom: 10%;
+  }
+}
+
 .imgCol {
   border-right: 1px solid;
 }
@@ -106,7 +121,7 @@ nav {
   margin-right: 10%;
 }
 
-.classes {
+.courses {
   margin-left: 10%;
 }
 
