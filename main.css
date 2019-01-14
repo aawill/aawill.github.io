@@ -12,14 +12,12 @@
   z-index: 1;
   text-align: center;
   align-content: center;
-  /*position: relative;*/
 }
 
 #mainContent {
   opacity: 0.92;
   justify-content: center;
   overflow: auto;
-  /*height: 75%;*/
   padding-top: 3vh;
   padding-bottom: 1vh;
 }
@@ -29,7 +27,6 @@
 }
 
 .cardCol {
-  /*overflow-y: scroll;*/
   overflow: -moz-scrollbars-none;
 }
 
