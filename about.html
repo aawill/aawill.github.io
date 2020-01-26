@@ -32,51 +32,104 @@
     </nav>
     <div id="bodyWrapper" class="container-fluid">
       <div class="row" id="topRow">
-        <div class="customHeader">
+        <div class="customHeader" id="aboutHeader">
           <h1>About</h1>
         </div>
       </div>
       <div id="mainContent">
         <div class="row">
-          <div class="col-12 col-sm-6 text-right imgCol">
-            <img src="assets/croma.png" class="img-fluid aboutLogo">
-          </div>
-          <div class="col-12 col-sm-6 text-left">
-            <p class="aboutContent">
-              I'm currently working as a research team lead at the University of Michigan Crowds + Machines Lab. We're working on a system for prototyping 3D spatial audio environents from within virtual reality, and writing an accompanying research paper with our findings.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-6 text-right imgCol">
-            <img src="assets/smtd.png" id="smtdLogo" class="img-fluid">
-            <img src="assets/eecs.png" id="eecsLogo" class="img-fluid">
-          </div>
-          <div class="col-12 col-sm-6 text-left">
-            <p class="aboutContent">
-              I'm also in my fourth year as a Sound Engineering student at Michigan, with minors in Computer Science and Electrical Engineering. This year, I'm taking:
-            </p>
-            <div class="row courses">
-              <div class="col-12 col-sm-6 courseCol">
-                <h6>Fall 2019</h6>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">EECS 351 Digital Signal Processing</li>
-                  <li class="list-group-item">EECS 485 Web Systems</li>
-                  <li class="list-group-item">PAT 431 Studio Recording and Production I</li>
-                  <li class="list-group-item">MUSICOL 407 Race and Ethnicity in Popular Music</li>
-                </ul>
+          <div class="col-xl-6 col-lg-6 text-left leftCol">
+            <div class="aboutContent">
+              <p>
+                <img src="assets/me.jpg" id="headshot">
+                I'm a student and a musician, primarily interested in computer science,
+                virtual reality, and their application to music & art.
+                I've been exploring research in this area lately - I collaborated on a
+                <a href="https://dl.acm.org/doi/10.1145/3325480.3329178">paper</a> and performance at
+                <a href="http://cc.acm.org/2019/">Creativity & Cognition 2019</a>,
+                and I'm curently hard at work on a new project, advised by
+                <a href="https://anilcamci.github.io/">Anıl Çamcı</a>, targeting UIST & CHI 2020.
+              </p>
+              <p>
+                I'm a native of Ann Arbor MI, but I'm hoping to relocate to the Seattle area after graduation.
+              </p>
+            </div>
+            <div class="aboutContent">
+              <p>
+                I've been a musician since childhood, learning lots of instruments along the way. 
+                Here are a few projects I'm particularly proud of:
+              </p>
+              <div class="row vidRow">
+                <div class="vidContainer">
+                  <iframe class="musicVid" title="Free For All" src="https://www.youtube.com/embed/ACzf137r5UI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="vidLabel">Drums with high school jazz group Tempus Fugit</div>
+                </div>
+                <div class="vidContainer">
+                  <iframe class="musicVid" title="Star" src="https://www.youtube.com/embed/7vfysfWzEJo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="vidLabel">Drums+bass with dad rock band Earl Grey and the Teabaggers</div>
+                </div>
               </div>
-              <div class="col-12 col-sm-6 courseCol">
-                <h6>Winter 2020</h6>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">EECS 452 DSP Design Lab</li>
-                  <li class="list-group-item">PAT 432 Studio Recording and Production II</li>
-                  <li class="list-group-item">PAT 422 Technical Ear Training</li>
-                  <li class="list-group-item">PAT 380 Sound for Theater</li>
-                  <li class="list-group-item">FTVM 376 New Media Theory</li>
-                </ul>
+              <div class="row vidRow">
+                <div class="vidContainer">
+                  <iframe class="musicVid" title="It Gets Funkier" src="https://www.youtube.com/embed/9nMbyytIpF0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="vidLabel">All the instruments for a Vulfpeck cover</div>
+                </div>
+                <div class="vidContainer">
+                  <iframe class="musicVid" title="Just the Two Of Us" src="https://www.youtube.com/embed/5u7AEOhg9jA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="vidLabel">Drums with extracurricular jazz group Jefferson Court Trio</div>
+                </div>
+              </div>
+              <div class="row vidRow">
+                <div class="vidContainer">
+                  <iframe class="musicVid" title="Take A Joke" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319140063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                  <div class="vidLabe">Co-writer and all instruments except vocals. Featuring Jacob Sugarman</div>
+                </div>
+                <div class="vidContainer">
+                  <iframe class="musicVid" title="Let's Melt" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/330418416&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                  <div class="vidLabe">Bass with party rock band Shmongo</div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 text-left">
+            <div class="aboutContent">
+              <p>
+                I'm in my fourth year as a Sound Engineering student at Michigan, with minors in Computer Science and Electrical
+                Engineering. This year, I'm taking:
+              </p>
+              <div class="row courses">
+                <div class="col-12 col-sm-6 courseCol">
+                  <h6>Fall 2019</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">EECS 351 Digital Signal Processing</li>
+                    <li class="list-group-item">PAT 431 Studio Recording and Production I</li>
+                    <li class="list-group-item">EECS 485 Web Systems</li>
+                    <li class="list-group-item">MUSICOL 407 Race and Ethnicity in Popular Music</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 courseCol">
+                  <h6>Winter 2020</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">EECS 452 DSP Design Lab</li>
+                    <li class="list-group-item">PAT 432 Studio Recording and Production II</li>
+                    <li class="list-group-item">PAT 422 Technical Ear Training</li>
+                    <li class="list-group-item">PAT 380 Sound for Theater</li>
+                    <li class="list-group-item">WOMENSTD 422 Feminist Political Thought</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <img src="assets/smtd.png" id="smtdLogo" class="img-fluid align-self-center">
+                <img src="assets/eecs.png" id="eecsLogo" class="img-fluid align-self-center">
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>

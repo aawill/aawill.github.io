@@ -1,3 +1,9 @@
+/* MULTIPLE PAGES */
+
+body, html {
+  height: 100%;
+}
+
 .customHeader {
   border: 1px solid black;
   width: 100%;
@@ -8,10 +14,35 @@
   font-family: 'Average Sans';
 }
 
+nav {
+  z-index: 1;
+}
+
 #bodyWrapper {
   z-index: 1;
   text-align: center;
   align-content: center;
+}
+
+#footRow {
+  height: 50px;
+}
+
+.footerText {
+  margin-left: 1vw;
+}
+
+.footerIcon {
+  margin-right: 1vw;
+  color: inherit;
+}
+
+.homeBody {
+  background: no-repeat left/100% url('assets/colorado.JPG');
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #mainContent {
@@ -22,21 +53,8 @@
   padding-bottom: 1vh;
 }
 
-#footRow {
-  height: 50px;
-}
-
 .cardCol {
   overflow: -moz-scrollbars-none;
-}
-
-.colHeader {
-  color: white;
-  border: 1px solid rgba(50, 50, 50, 0.7);
-  border-radius: 3px;
-  background-color: rgba(50, 50, 50, 0.7);
-  padding: 5px;
-  margin-bottom: 10px;
 }
 
 .homeCard {
@@ -53,79 +71,88 @@
   background: transparent;
 }
 
-.footerText {
-  margin-left: 1vw;
+
+/* MAIN PAGE */
+
+.colHeader {
+  color: white;
+  border: 1px solid rgba(50, 50, 50, 0.7);
+  border-radius: 3px;
+  background-color: rgba(50, 50, 50, 0.7);
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
-.footerIcon {
-  margin-right: 1vw;
-  color: inherit;
-}
 
-nav {
-  z-index: 1;
-}
+/* RESUME PAGE */
 
-.homeBody {
-  background: no-repeat left/100% url('assets/colorado.JPG');
-  background-color: rgba(255, 255, 255, 0.4);
-  background-blend-mode: lighten;
-  background-size: cover;
-  background-attachment: fixed;
-}
+
+/* ABOUT PAGE */
 
 .aboutBody {
   height: 100%;
+  background-color: rgb(224, 234, 238);
+}
+
+.aboutContent {
+  background-color: white;
+  margin: 5%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3% 5%;
+}
+
+.leftCol {
+  border-right: 1px solid;
+}
+
+#headshot {
+  width: 22%;
+  float: left;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+
+.vidRow {
+  margin-bottom: 5%;
+}
+
+.vidContainer {
+  width: 50%;
+}
+
+.musicVid {
+  width: 95%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.courses {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#smtdLogo {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 50%;
+  height: 100%;
+}
+
+#eecsLogo {
+  width: 20%;
+  margin-right: 5%;
 }
 
 /* responsiveness for small screens */
-@media (max-width: 576px) {
-  .imgCol {
+@media (max-width: 768px) {
+  .leftCol {
     border-right: 0px !important;
     border-top: 1px solid;
     text-align: left !important;
-  }
-  .aboutLogo {
-    margin-bottom: 0 !important;
   }
   .courseCol {
     margin-bottom: 10%;
   }
 }
 
-.imgCol {
-  border-right: 1px solid;
-}
-
-.aboutLogo {
-  margin: 10%;
-  width: 50%;
-  display: inline-block;
-}
-
-#smtdLogo, #eecsLogo {
-  margin-top: 10%;
-}
-
-#smtdLogo {
-  margin-left: 10%;
-  margin-right: 5%;
-  width: 50%;
-}
-
-#eecsLogo {
-  width: 20%;
-  margin-right: 10%;
-}
-
-.courses {
-  margin-left: 10%;
-}
-
-.aboutContent {
-  margin: 10%;
-}
-
-body, html {
-  height: 100%;
-}
